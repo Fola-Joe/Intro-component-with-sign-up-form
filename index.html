@@ -20,16 +20,42 @@
         <h2><span class="span-1">Try it free 7 days</span> then<br> $20/mo. thereafter</h2>
       </div>
       <div class="form-input">
-        <form action="" class="main-form">
+        <form action="#" class="main-form">
           <input type="text" name="first-name" id="first-name" placeholder="First Name" class="input">
+          <div class="error-icon">
+            <img src="images/icon-error.svg" alt="error icon" class="">
+          </div>
+          <!-- <img src="images/icon-error.svg" alt="error icon" class=""> -->
+          <p id="first-name-p" class="para">First Name cannot be empty</p>
+
           <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="input">
+          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
+          <div class="error-icon">
+            <img src="images/icon-error.svg" alt="error icon" class="">
+          </div>
+          <p id="last-name-p" class="para">Last Name cannot be empty</p>
+
           <input type="email" name="email" id="email" placeholder="Email Address" class="input">
+          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
+          <div class="error-icon">
+            <img src="images/icon-error.svg" alt="error icon" class="">
+          </div>
+          <p id="email-p" class="para">Looks like this is not an email</p>
+
           <input type="password" name="password" id="password" placeholder="Password" class="input">
-          <input type="submit" value="Claim your free trial" class="submit">
+          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
+          <div class="error-icon">
+            <img src="images/icon-error.svg" alt="error icon" class="">
+          </div>
+          <p id="password-p" class="para">Password cannot be empty</p>
+
+          <input type="button" value="Claim your free trial" class="btn" id="btn">
         </form>
         <p>By clicking the button, you are agreeing to<br> our <span class="span-2">Terms and Services</span></p>
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
