@@ -98,7 +98,7 @@ h2 {line-height: 1.5;}
 .input:-webkit-autofill:hover, 
 .input:-webkit-autofill:focus, 
 .input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 50px white inset !important;
 }
 ::placeholder {
     color: hsla(249, 10%, 26%, 0.7);
@@ -108,7 +108,7 @@ h2 {line-height: 1.5;}
     color: hsl(0, 100%, 74%) ;
     font-size: 0.65rem;
     text-align: right;
-    margin-top: 1.2rem;
+    margin-top: 1.75rem;
     font-style: italic;
     display: none;
 }
