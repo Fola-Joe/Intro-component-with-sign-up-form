@@ -94,11 +94,17 @@ h2 {line-height: 1.5;}
     margin-top: 0.7rem;
     outline: none;
 }
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover, 
+.input:-webkit-autofill:focus, 
+.input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
 ::placeholder {
     color: hsla(249, 10%, 26%, 0.7);
     font-weight: 600;
 }
-.main-form > p {
+.input-div > p {
     color: hsl(0, 100%, 74%) ;
     font-size: 0.65rem;
     text-align: right;
