@@ -15,6 +15,9 @@ function validity() {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
+
+    const err = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (fnameValue === '') {
         errorIcon[0].style.display = 'flex';
         errorLine[0].style.display = 'block';
@@ -45,7 +48,7 @@ function validity() {
         errorLine[2].style.display = 'none';
         input[2].style.border = '1px solid hsl(246, 25%, 77%)';
     }
-    if (!email.validity.valid) {
+    if (emailValue.match(err)) {
         errorIcon[2].style.display = 'none';
         errorLine[2].style.display = 'none';
     } else {
