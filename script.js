@@ -15,8 +15,6 @@ function validity() {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
-    const err = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
     if (fnameValue === '') {
         errorIcon[0].style.display = 'flex';
         errorLine[0].style.display = 'block';
@@ -47,7 +45,7 @@ function validity() {
         errorLine[2].style.display = 'none';
         input[2].style.border = '1px solid hsl(246, 25%, 77%)';
     }
-    if (emailValue.match(err)) {
+    if (!email.validity.valid) {
         errorIcon[2].style.display = 'none';
         errorLine[2].style.display = 'none';
     } else {
@@ -55,7 +53,8 @@ function validity() {
         errorLine[2].style.display = 'block';
         input[2].style.border = '2px solid hsl(0, 100%, 74%)';
         input[2].placeholder = 'email@example/com';
-        input[2].placeholder.style.color = 'hsl(0, 100%, 74%)';
+    // Add the CSS class to style the red placeholder
+        input[2].classList.add('red-placeholder')
     }
     if (passwordValue === '') {
         errorIcon[3].style.display = 'flex';

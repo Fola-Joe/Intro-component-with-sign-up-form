@@ -15,50 +15,80 @@
       <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable.</p>
     </section>
+
     <div class="form">
       <div class="info">
         <h2><span class="span-1">Try it free 7 days</span> then<br> $20/mo. thereafter</h2>
       </div>
+
       <div class="form-input">
         <form action="#" class="main-form">
           <div class="input-div">
-          <input type="text" name="first-name" id="first-name" placeholder="First Name" class="input">
-          <div class="error-icon">
-            <img src="images/icon-error.svg" alt="error icon" class="">
-          </div>
-          <!-- <img src="images/icon-error.svg" alt="error icon" class=""> -->
-          <p id="first-name-p" class="para">First Name cannot be empty</p>
-          </div>
-
-          <div class="input-div">
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="input">
-          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
-          <div class="error-icon">
-            <img src="images/icon-error.svg" alt="error icon" class="">
-          </div>
-          <p id="last-name-p" class="para">Last Name cannot be empty</p>
+            <input 
+            type="text" 
+            name="first-name" 
+            id="first-name" 
+            placeholder="First Name" 
+            class="input"
+            aria-label="first name input">
+            <!-- "aria-label"is a set of attributes that can be used to enhance the accessibility of web
+             content, especially for users with disabilities -->
+            <div class="error-icon">
+              <img src="images/icon-error.svg" alt="error icon" class="">
+            </div>
+            <p id="first-name-p" class="para">First Name cannot be empty</p>
           </div>
 
           <div class="input-div">
-          <input type="email" name="email" id="email" placeholder="Email Address" class="input">
-          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
-          <div class="error-icon">
-            <img src="images/icon-error.svg" alt="error icon" class="">
-          </div>
-          <p id="email-p" class="para">Looks like this is not an email</p>
+            <input 
+            type="text" 
+            name="last-name" 
+            id="last-name" 
+            placeholder="Last Name" 
+            class="input"
+            aria-label="last name input">
+            <div class="error-icon">
+              <img src="images/icon-error.svg" alt="error icon" class="">
+            </div>
+            <p id="last-name-p" class="para">Last Name cannot be empty</p>
           </div>
 
           <div class="input-div">
-          <input type="password" name="password" id="password" placeholder="Password" class="input">
-          <!-- <img src="images/icon-error.svg" alt="error icon"> -->
-          <div class="error-icon">
-            <img src="images/icon-error.svg" alt="error icon" class="">
-          </div>
-          <p id="password-p" class="para">Password cannot be empty</p>
+            <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="Email Address" 
+            class="input"
+            aria-label="email input">
+            <div class="error-icon">
+              <img src="images/icon-error.svg" alt="error icon" class="">
+            </div>
+            <p id="email-p" class="para">Looks like this is not an email</p>
           </div>
 
-          <input type="button" value="Claim your free trial" class="btn" id="btn">
+          <div class="input-div">
+            <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="Password" 
+            class="input"
+            aria-label="password input">
+            <div class="error-icon">
+              <img src="images/icon-error.svg" alt="error icon" class="">
+            </div>
+            <p id="password-p" class="para">Password cannot be empty</p>
+          </div>
+
+          <input 
+          type="submit" 
+          value="Claim your free trial" 
+          class="btn" 
+          id="btn"
+          aria-label="submit button">
         </form>
+
         <p>By clicking the button, you are agreeing to<br> our <span class="span-2">Terms and Services</span></p>
       </div>
     </div>

@@ -104,6 +104,9 @@ h2 {line-height: 1.5;}
     color: hsla(249, 10%, 26%, 0.7);
     font-weight: 600;
 }
+.red-placeholder::placeholder {
+    color: hsl(0, 100%, 74%);
+  }
 .input-div > p {
     color: hsl(0, 100%, 74%) ;
     font-size: 0.65rem;
